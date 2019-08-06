@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title></title>
+        
+        <!-- Bootstrap -->
+        <link href="css/vendors/bootstrap.min.css" rel="stylesheet">
+        <!-- Font -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+        
+        <!-- slick -->
+        <link rel="stylesheet" href="css/vendors/slick.css" >
+        <link rel="stylesheet" href="css/vendors/slick-theme.css" >
+        
+        <!-- animate.css -->
+        <link rel="stylesheet" href="css/vendors/animate.min.css">
+        
+        <!-- main css -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+<!--      start header -->
+       <header>
+            <nav>
+                <div class="nav-icon">
+                    <a href="#">
+                        <i class="fas fa-th"></i>
+                    </a>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a class="menu-link" href="index.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="who-we.html">من نحن</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="course.html">الدورات التدريبية</a>
+                    </li>
+                    <li class="menu-item menu-item-current">
+                        <a class="menu-link" href="volunteer.html">المبادرات التطوعية</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="blog.html">المدونات</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">تواصل معنا</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="login">
+                <button class="new">حساب جديد</button>
+                <button class="enter">تسجيل دخول</button>
+                <button class="search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <input type="search" placeholder="ابحث هنا ..." class="search-box" >
+            </div>
+        </header> 
+        
+        
+<!-- login form -->
+        <div class="login-form">
+            <form>
+                <i class="far fa-window-close close"></i>
+                <h2>تسجيل دخول</h2>
+                <input type="text" placeholder="اسم المستخدم">
+                <input type="password" placeholder="الرقم السري">
+                <a href="#">هل نسيت الرقم السري؟</a>
+                <button>تسجيل دخول</button>
+            </form>
+        </div> 
+        
+        
+<!--        main section    -->
+        <div class="who-main">
+            <div class="who-title">
+                <h1>المبادرات التطوعية</h1>
+            </div>
+        </div>
+        
+        
+<!--        blog section -->
+        <div class="blog section volunteer-page">
+            <div class="section-title">
+                <h2>المبادرات</h2>
+                <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+            </div>
+            <div class="blog-btns">
+                <button id="action">
+                    مبادرات نشطة
+                    <i class="far fa-handshake"></i>
+                </button>
+                <button id="courses">
+                    مبادرات مغلقة
+                    <i class="far fa-handshake"></i>
+                </button>
+                <button class="btn-focused" id="all-news">
+                    مبادرات فعالة
+                    <i class="far fa-handshake"></i>
+                </button>
+            </div>
+            
+          <!--  volunteer table -->
+            <div class="volunteer-table wow fadeInUp">
+                <div class="container">
+                    <table>
+                        <tr>
+                           <th></th>
+                            <th>
+                                <i class="far fa-handshake"></i>
+                                اسم المبادرة
+                            </th>
+                            <th>
+                                <i class="far fa-map"></i>
+                                المنطقة
+                            </th>
+                            <th>
+                                <i class="far fa-calendar-alt"></i>
+                                تاريخ البداية
+                            </th>
+                            <th>
+                                <i class="far fa-calendar-alt"></i>
+                                تاريخ البداية
+                            </th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td class="table-img">
+                                <img src="images/blog.png">
+                            </td>
+                            <td>مبادرة توزيع المياه على الحج</td>
+                            <td>الدمام</td>
+                            <td>20/1/2019</td>
+                            <td>20/1/2019</td>
+                            <td class="table-btn">
+                                <button>المزيد</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-img">
+                                <img src="images/blog.png">
+                            </td>
+                            <td>مبادرة توزيع المياه على الحج</td>
+                            <td>الدمام</td>
+                            <td>20/1/2019</td>
+                            <td>20/1/2019</td>
+                            <td class="table-btn">
+                                <button>المزيد</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-img">
+                                <img src="images/blog.png">
+                            </td>
+                            <td>مبادرة توزيع المياه على الحج</td>
+                            <td>الدمام</td>
+                            <td>20/1/2019</td>
+                            <td>20/1/2019</td>
+                            <td class="table-btn">
+                                <button>المزيد</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-img">
+                                <img src="images/blog.png">
+                            </td>
+                            <td>مبادرة توزيع المياه على الحج</td>
+                            <td>الدمام</td>
+                            <td>20/1/2019</td>
+                            <td>20/1/2019</td>
+                            <td class="table-btn">
+                                <button>المزيد</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-img">
+                                <img src="images/blog.png">
+                            </td>
+                            <td>مبادرة توزيع المياه على الحج</td>
+                            <td>الدمام</td>
+                            <td>20/1/2019</td>
+                            <td>20/1/2019</td>
+                            <td class="table-btn">
+                                <button>المزيد</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-img">
+                                <img src="images/blog.png">
+                            </td>
+                            <td>مبادرة توزيع المياه على الحج</td>
+                            <td>الدمام</td>
+                            <td>20/1/2019</td>
+                            <td>20/1/2019</td>
+                            <td class="table-btn">
+                                <button>المزيد</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-img">
+                                <img src="images/blog.png">
+                            </td>
+                            <td>مبادرة توزيع المياه على الحج</td>
+                            <td>الدمام</td>
+                            <td>20/1/2019</td>
+                            <td>20/1/2019</td>
+                            <td class="table-btn">
+                                <button>المزيد</button>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+<!--        websites -->
+    <div class="websites section who-slider">
+        <div class="section-title">
+            <h2>مواقع تهمك في حياتك</h2>
+            <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            </p>
+        </div>
+        <div class="websites-content wow fadeInUp">
+            <div class="container">
+                <div class="slides">
+                    <div class="slider">
+                        <div class="website-card">
+                           <div class="slider-img">
+                                <img src="images/saudi.png">
+                           </div>
+                           <div class="slider-title">
+                                <h2>موقع وزارة الداخلية</h2>
+                                <h3 class="card-header">المملكة العربية السعودية</h3>
+                           </div>
+                            <p>
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="website-card">
+                           <div class="slider-img">
+                                <img src="images/saudi.png">
+                           </div>
+                           <div class="slider-title">
+                                <h2>موقع وزارة الداخلية</h2>
+                                <h3 class="card-header">المملكة العربية السعودية</h3>
+                           </div>
+                            <p>
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="website-card">
+                           <div class="slider-img">
+                                <img src="images/saudi.png">
+                           </div>
+                           <div class="slider-title">
+                                <h2>موقع وزارة الداخلية</h2>
+                                <h3 class="card-header">المملكة العربية السعودية</h3>
+                           </div>
+                            <p>
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="website-card">
+                           <div class="slider-img">
+                                <img src="images/saudi.png">
+                           </div>
+                           <div class="slider-title">
+                                <h2>موقع وزارة الداخلية</h2>
+                                <h3 class="card-header">المملكة العربية السعودية</h3>
+                           </div>
+                            <p>
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+<!--       cols -->
+       <div class="cols wow fadeInUp">
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-3 col-xs-12 col-bottom">
+                       <div class="contact">
+                          <span></span>
+                           <h1>
+                               0800 300 1254
+                               <i class="fas fa-phone-square"></i>
+                           </h1>
+                           <div class="share">
+                               <h3>شاركنا عبر قنوات التواصل</h3>
+                               <ul>
+                                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                   <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                               </ul>
+                           </div>
+                           <p>
+                               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد  ولا يحوي أخطاء لغوية، م
+                       </div>
+                   </div>
+                   <div class="col-sm-3 col-xs-4 col-bottom">
+                       <ul class="list">
+                           <li class="main-col">
+                               <a href="#">اقسام الموقع</a>
+                           </li>
+                           <li>
+                               <a href="#">الصفحة الرئيسية</a>
+                           </li>
+                           <li>
+                               <a href="#">من نحن</a>
+                           </li>
+                           <li>
+                               <a href="#">الدورات التدريبية</a>
+                           </li>
+                           <li>
+                               <a href="#">المباردات التطوعية</a>
+                           </li>
+                           <li>
+                               <a href="#">المدونات</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="col-sm-3 col-xs-4 ">
+                       <ul class="list">
+                           <li class="main-col">
+                               <a href="#">اقسام الموقع</a>
+                           </li>
+                           <li>
+                               <a href="#">الصفحة الرئيسية</a>
+                           </li>
+                           <li>
+                               <a href="#">من نحن</a>
+                           </li>
+                           <li>
+                               <a href="#">الدورات التدريبية</a>
+                           </li>
+                           <li>
+                               <a href="#">المباردات التطوعية</a>
+                           </li>
+                           <li>
+                               <a href="#">المدونات</a>
+                           </li>
+                           <li>
+                               <a href="#">تواصل معنا</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="col-sm-3 col-xs-4 ">
+                       <ul class="list">
+                           <li class="main-col">
+                               <a href="#">اقسام الموقع</a>
+                           </li>
+                           <li>
+                               <a href="#">الصفحة الرئيسية</a>
+                           </li>
+                           <li>
+                               <a href="#">من نحن</a>
+                           </li>
+                           <li>
+                               <a href="#">الدورات التدريبية</a>
+                           </li>
+                           <li>
+                               <a href="#">المباردات التطوعية</a>
+                           </li>
+                           <li>
+                               <a href="#">المدونات</a>
+                           </li>
+                           <li>
+                               <a href="#">تواصل معنا</a>
+                           </li>
+                       </ul>
+                   </div>
+                   
+               </div>
+           </div>
+       </div>
+       
+       <div class="container"> <hr> </div>
+  
+
+  
+<!--       footer -->
+       <div class="footer wow fadeInUp">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-4 col-sm-5 col-xs-12">
+                       <div class="subscribe">
+                          <span class="line"></span>
+                           <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                           <label>
+                              <input type="text">
+                               <button>اشتراك</button>
+                           </label>
+                           <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                       </div>
+                   </div>
+                   <div class="col-md-8 col-sm-7 col-xs-12">
+                       <div class="footer-content">
+                            <a href="#">
+                               <img src="images/footer.png">
+                               <h3>هذا النص هو مثال لنص يمكن أن يستبدل في نفس<br> المساحة، لقد تم توليد هذا النص من مولد النص العرب</h3>
+                            </a>
+                           <p>
+                               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                 له
+                           </p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+        
+        
+        
+        
+        
+        
+    <script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors/wow.min.js"></script>
+          <script>
+          new WOW().init();
+          </script>
+    <script src="js/vendors/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+   
+</html>
